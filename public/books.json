@@ -1,0 +1,24 @@
+{
+    "sildes":[
+    {
+        "src":  "https://ia600505.us.archive.org/view_archive.php?archive=/35/items/l_covers_0014/l_covers_0014_39.zip&file=0014398104-L.jpg",
+        "alt":  "book 1"
+    },
+     {
+        "src":  "https://ia800505.us.archive.org/view_archive.php?archive=/35/items/l_covers_0014/l_covers_0014_31.zip&file=0014315089-L.jpg",
+        "alt":  "book 2"
+    },
+     {
+        "src":  "https://ia600505.us.archive.org/view_archive.php?archive=/35/items/l_covers_0014/l_covers_0014_63.zip&file=0014638562-L.jpg",
+        "alt":  "book 3"
+    },
+    {
+        "src":"https://covers.openlibrary.org/b/id/15096900-L.jpg",
+         "alt":  "book 4"
+    },
+    {
+        "src":"https://ia801909.us.archive.org/view_archive.php?archive=/31/items/l_covers_0013/l_covers_0013_88.zip&file=0013886065-L.jpg",
+         "alt":  "book 5"
+    }
+]
+}
