@@ -10,7 +10,8 @@ const Header = styled.header`
 `;
 
 const NavContainer = styled.nav`
-  background: ${({ theme }) => theme.colors.secondary};
+  // background: ${({ theme }) => theme.colors.secondary};
+  background:  #330014;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -24,21 +25,36 @@ const Menu = styled.ul`
 `;
 const MenuItem = styled.li`
   cursor: pointer;
+  color: #ffffff;
+  font-family: Times New Roman;
+  font-size: 20px;
+  font-weight: Bold;
+  font-family:"Garamond";
   &:hover {
-    color: #424026;
+    color: yellow;
   }
 `;
 const PageTitle = styled.h1`
- color: #424026;
+ color: #ffffff;
+ font-family: "Lucida Console";
+ font-style: italic;
+ font-size: 30px;
 `
-const NavBar=()=>{
+const NavBar=({onLoginClick, onCartClick, onClickTrending, user, onLogout})=>{
  return(
     <Header>
     <NavContainer><PageTitle>BookWorms</PageTitle>
         <Menu>
-            <MenuItem>E-Books</MenuItem>
-            <MenuItem>order</MenuItem>
-            <MenuItem>login</MenuItem>
+            <MenuItem onClick={onClickTrending}>E-Books</MenuItem>
+            <MenuItem>Order</MenuItem>
+            <MenuItem onClick={onCartClick}>Cart</MenuItem>
+            <MenuItem onClick={onLoginClick}>Login</MenuItem>
+             {user ? (
+          <>
+            <MenuItem>Hi, {user.username}</MenuItem>
+            <MenuItem style={{ cursor: 'pointer' }} onClick={onLogout}>Logout</MenuItem>
+          </>
+        ):""}
         </Menu>
     </NavContainer>
     </Header>
